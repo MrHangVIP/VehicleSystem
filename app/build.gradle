@@ -14,10 +14,10 @@ android {
         signingConfigs {
             release {
                 //填写之前Eclipse-Build里面的默认路径
-                storeFile file("../ticketseller.keystore")
-                storePassword "ticketseller.keystore"
-                keyAlias "ticketseller.keystore"
-                keyPassword "ticketseller.keystore"
+                storeFile file("../vehiclesystem.keystore")
+                storePassword "vehiclesystem.keystore"
+                keyAlias "vehiclesystem.keystore"
+                keyPassword "vehiclesystem.keystore"
             }
         }
         ndk {

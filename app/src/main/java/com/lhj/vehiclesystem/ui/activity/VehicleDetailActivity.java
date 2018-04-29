@@ -98,7 +98,6 @@ public class VehicleDetailActivity extends BaseActivity implements RecyclerDataL
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
                 bundle.putString("title", "南京.奥体中心");
-                jumpToNext(MapDetailActivity.class, bundle);
             }
         });
         //弹窗

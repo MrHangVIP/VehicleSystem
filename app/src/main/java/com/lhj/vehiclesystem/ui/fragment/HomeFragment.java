@@ -19,7 +19,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
-import com.hoge.android.library.baidumap.BaiduMapUtils;
 import com.lhj.vehiclesystem.BaseFragment;
 import com.lhj.vehiclesystem.R;
 import com.lhj.vehiclesystem.api.OkHttpHelp;
@@ -68,7 +67,6 @@ public class HomeFragment extends BaseFragment {
     private RelativeLayout fhl_rl_month;
     private AnimatorSet filterViewHideAnimator;
     private AnimatorSet filterViewShowAnimator;
-    private BaiduMapUtils baiduMapUtils;
 
     private Handler handler = new Handler() {
         @Override

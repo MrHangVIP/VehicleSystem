@@ -128,11 +128,6 @@
             android:screenOrientation="portrait" />
         <!-- 找回密码 -->
         <activity
-            android:name=".ui.activity.MapDetailActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:launchMode="standard"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.activity.OrdersConfirmActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
