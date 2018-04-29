@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/local.properties
+.DS_Store
+/build
+/captures
+.idea
+.gradle/
+.idea/
+*.iml
+build/
+gen/
+local.properties
+*/build
+*/project.properties
+*/.gitignore

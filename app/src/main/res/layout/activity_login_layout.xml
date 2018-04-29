@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="53dp"
+        android:paddingRight="53dp">
+
+        <RelativeLayout
+            android:id="@+id/login4_ll_rl_userphone"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login4_icon_userphone" />
+
+            <EditText
+                android:id="@+id/login4_ll_et_userphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toLeftOf="@+id/login4_ll_iv_delete"
+                android:background="@null"
+                android:hint="@string/login4_hint_phone_number"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#454545"
+                android:textColorHint="#999999"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/login4_ll_iv_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/login4_icon_delete"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login4_ll_rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login4_icon_password" />
+
+            <EditText
+                android:id="@+id/login4_ll_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toLeftOf="@+id/login4_ll_iv_pass_delete"
+                android:background="@null"
+                android:hint="@string/login4_hint_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#454545"
+                android:textColorHint="#999999"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/login4_ll_iv_pass_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/login4_icon_delete"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login4_ll_rl_businessId"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login4_icon_password" />
+
+            <EditText
+                android:id="@+id/login4_ll_et_businessId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toLeftOf="@+id/login4_ll_iv_businessId_delete"
+                android:background="@null"
+                android:hint="企业号"
+                android:singleLine="true"
+                android:textColor="#454545"
+                android:textColorHint="#999999"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/login4_ll_iv_businessId_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/login4_icon_delete"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login4_ll_bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login4_button_bg"
+            android:enabled="false"
+            android:text="@string/login4_button_login"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp">
+
+            <TextView
+                android:id="@+id/login4_ll_tv_forget_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login4_forget_pass"
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/login4_ll_tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/login4_register"
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/login4_img_login_notice"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/login4_ll_ll_third_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

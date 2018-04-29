@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/aml_fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/aml_ll_tab_layout">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/aml_ll_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#55FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/aml_ll_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/aml_iv_left"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_home_press" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/aml_iv_add"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/aml_ll_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/aml_iv_right"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_mine_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/aml_iv_publish"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_image_add"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

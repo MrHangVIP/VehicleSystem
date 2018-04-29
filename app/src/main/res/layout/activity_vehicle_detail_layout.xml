@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/atdl_iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_app_bg" />
+
+    <com.lhj.vehiclesystem.ui.widget.recyclerview.RecyclerViewLayout
+        android:id="@+id/atdl_rcy_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/atdl_ll_bottom_layout"
+        android:background="#00FFFFFF">
+
+    </com.lhj.vehiclesystem.ui.widget.recyclerview.RecyclerViewLayout>
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:id="@+id/atdl_ll_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/atdl_iv_star"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_star_nomal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="喜欢"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/atdl_tv_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_buy_bg"
+            android:gravity="center"
+            android:text="申请用车"
+            android:textColor="#E6E6E6"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</RelativeLayout>

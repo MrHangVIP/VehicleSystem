@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="53dp"
+        android:paddingRight="53dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:textSize="18sp"
+            android:textColor="#DC3C38"
+            android:layout_gravity="center_horizontal"
+            android:text="请输入您的公司企业号"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_gravity="center_horizontal"
+            android:text="企业号是管理员统一发放，请自行获取"
+            />
+
+        <RelativeLayout
+            android:id="@+id/login4_rscl_rl_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="19dp">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login4_icon_userphone" />
+
+            <EditText
+                android:id="@+id/login4_rscl_et_userphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toLeftOf="@+id/login4_rscl_iv_pass_delete"
+                android:background="@null"
+                android:hint="企业号"
+                android:singleLine="true"
+                android:textColor="#454545"
+                android:textColorHint="#999999"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/login4_rscl_iv_pass_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/login4_icon_delete" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login4_rscl_bt_send"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login4_button_bg"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

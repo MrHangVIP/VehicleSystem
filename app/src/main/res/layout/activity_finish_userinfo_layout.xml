@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout style="@style/user_info_item_ll_style">
+
+        <TextView
+            style="@style/user_info_item_tv_style"
+            android:text="真实姓名" />
+
+        <EditText
+            android:id="@+id/aful_et_true_name"
+            style="@style/user_info_item_et_style"
+            android:hint="请输入真实姓名" />
+
+    </LinearLayout>
+
+    <RadioGroup style="@style/user_info_item_ll_style">
+
+        <TextView
+            style="@style/user_info_item_tv_style"
+            android:text="性别" />
+
+        <RadioButton
+            android:id="@+id/aful_rb_man"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:checked="true"
+            android:text="男"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/aful_rb_woman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="女"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <LinearLayout style="@style/user_info_item_ll_style">
+
+        <TextView
+            style="@style/user_info_item_tv_style"
+            android:text="出生年月" />
+
+        <EditText
+            android:id="@+id/aful_tv_birth"
+            style="@style/user_info_item_et_style"
+            android:hint="请输入出生日期:xxxx-xx-xx" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/user_info_item_ll_style">
+
+        <TextView
+            style="@style/user_info_item_tv_style"
+            android:text="驾驶证号" />
+
+        <EditText
+            android:id="@+id/aful_et_licence"
+            style="@style/user_info_item_et_style"
+            android:hint="请输入驾驶证号" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/user_info_item_ll_style">
+
+        <TextView
+            style="@style/user_info_item_tv_style"
+            android:text="驾照等级" />
+
+        <TextView
+            android:id="@+id/aful_tv_level"
+            style="@style/user_info_item_et_style"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:text="C1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/aful_bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/img_buy_bg"
+        android:text="提交"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+</LinearLayout>

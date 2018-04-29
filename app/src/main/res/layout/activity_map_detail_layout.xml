@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/amdl_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/amdl_iv_zoom_out"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/amdl_iv_zoom_in"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/icon_zoom_out" />
+
+    <ImageView
+        android:id="@+id/amdl_iv_zoom_in"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/icon_zoom_in" />
+
+    <ImageView
+        android:id="@+id/amdl_iv_location"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:src="@drawable/icon_location_address" />
+
+</RelativeLayout>

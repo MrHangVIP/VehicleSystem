@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:skin="http://schemas.android.com/android/skin"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/failure_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#f0f0f0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/failure_imageView"
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:src="@drawable/default_failure_pic"
+        skin:enable="true"/>
+
+</RelativeLayout>

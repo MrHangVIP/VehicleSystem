@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">VehicleSystem</string>
+
+    <string name="no_data">无相关数据</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="no_module">该模块未配置</string>
+    <string name="failure_solution">查看解决方案</string>
+    <string name="failure_solution_text">解决方案：打开【设置】-【移动网络】开启【移动数据】</string>
+    <string name="failure_net_tip">网络状态待提升，</string>
+    <string name="failure_net_tip2">数据加载失败，</string>
+    <string name="failure_net_retry">点此重试</string>
+    <!--登录注册开始-->
+    <string name="login4_hint_phone_number">手机号</string>
+    <string name="login4_hint_password">密码</string>
+    <string name="login4_button_login">登录</string>
+    <string name="login4_button_register">注册</string>
+    <string name="login4_forget_pass">忘记密码</string>
+    <string name="login4_register">快速注册</string>
+    <string name="login4_regist_notice">输入您的手机号码</string>
+    <string name="login4_regist_code_notice">您将收到短信来验证身份</string>
+    <string name="login4_regist_code_send">发送验证码</string>
+    <string name="login4_regist_next_notice">请输入发至\n%1$s的验证码</string>
+    <string name="login4_regist_next_hint_code">验证码</string>
+    <string name="login4_regist_next_hint_pass1">请设置密码</string>
+    <string name="login4_regist_next_hint_pass2">请再次输入密码</string>
+    <string name="login4_regist_next_code">获取验证码</string>
+    <string name="login4_forget_pass_send_notice">手机号不存在</string>
+    <string name="login4_forget_pass_text">输入收到的验证码</string>
+    <string name="login4_forget_pass_dialog_text">密码修改成功</string>
+    <string name="login4_forget_pass_dialog_yes">知道了</string>
+
+    <string name="user_name_empty">用户名不能为空</string>
+    <string name="user_pwd_empty">密码不能为空</string>
+
+    <!--6.0权限-->
+    <string name="permission_call">请开启打电话权限，不然无法使用此功能</string>
+    <string name="permission_sms">请开启读取短信权限，不然无法自动获取验证码</string>
+    <string name="permission_phone">请打开获取系统信息权限，不然无法使用此功能</string>
+    <string name="permission_camera">请打开相机和读取存储权限，保证相机功能能够正常使用</string>
+    <string name="permission_storge">请打开读取存储权限，不然无法使用此功能</string>
+    <string name="permission_location">请打开位置权限，不然无法使用此功能</string>
+    <string name="permission_audio">请打开录音和读取存储权限，不然无法使用此功能</string>
+    <string name="permission_calendar">请打开日历权限，不然无法使用此功能</string>
+    <string name="permission_contacts">请打开联系人权限，不然无法使用此功能</string>
+    <string name="permission_welcome">请打开读取系统设置和存储以及相机权限，否则将无法正常使用App。</string>
+    <string name="permission_sensor">请打开传感器权限，不然无法使用此功能</string>
+    <string name="permission_check">请打开权限，不然无法使用此功能</string>
+    <string name="permission_web">请开启基本权限，以保证程序正常运行</string>
+    <string name="permission_msg">请开启发送短信权限，不然不无法发送短信</string>
+    <string name="permission_camera_audio">请开启基本权限，以保证程序正常运行</string>
+
+    <!-- 分享开始 -->
+    <string name="share">分享</string>
+    <string name="WEIXIN">微信</string>
+    <string name="WE_FREND">朋友圈</string>
+    <string name="QQ">QQ</string>
+    <string name="QQ_ZONE">空间</string>
+    <string name="WEIBO">微博</string>
+
+</resources>

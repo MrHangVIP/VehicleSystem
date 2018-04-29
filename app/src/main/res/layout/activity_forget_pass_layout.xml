@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="53dp"
+        android:paddingRight="53dp">
+
+        <TextView
+            android:id="@+id/login4_rnl_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/login4_forget_pass_text"
+            android:textColor="#DC3C38"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/login4_rnl_tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:text="@string/login4_regist_next_notice" />
+
+
+        <RelativeLayout
+            android:id="@+id/login4_rnl_rl_code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login4_icon_message" />
+
+            <EditText
+                android:id="@+id/login4_rnl_et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toLeftOf="@+id/login4__rnl_tv_send_code"
+                android:background="@null"
+                android:hint="@string/login4_regist_next_hint_code"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#454545"
+                android:textColorHint="#999999"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/login4__rnl_tv_send_code"
+                android:layout_width="80dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/login4_send_code_bg"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/login4_regist_next_code"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login4_rnl_rl_password1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login4_icon_password" />
+
+            <EditText
+                android:id="@+id/login4_rnl_et_password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@null"
+                android:hint="@string/login4_regist_next_hint_pass1"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#454545"
+                android:textColorHint="#999999"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/login4_rnl_iv_show"
+                android:layout_width="29dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/login4_icon_show_pass" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login4_rnl_rl_password2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login4_icon_password" />
+
+            <EditText
+                android:id="@+id/login4_rnl_et_password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@null"
+                android:hint="@string/login4_regist_next_hint_pass2"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#454545"
+                android:textColorHint="#999999"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login4_rnl_bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login4_button_bg"
+            android:enabled="false"
+            android:text="@string/login4_button_register"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

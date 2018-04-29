@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#FFF"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="54dp"
+		android:gravity="center"
+		android:textColor="#333"
+		android:textSize="15sp"
+		android:text="@string/share"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp"
+		android:background="#bfbfbf"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp">
+
+		<com.zy.vehiclesystem.bean.ShareItem
+			android:id="@+id/item_1"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"/>
+		<com.lhj.vehiclesystem.bean.ShareItem
+			android:id="@+id/item_2"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"/>
+
+		<com.lhj.vehiclesystem.bean.ShareItem
+			android:id="@+id/item_3"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"/>
+
+		<com.lhj.vehiclesystem.bean.ShareItem
+			android:id="@+id/item_4"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"/>
+
+		<com.lhj.vehiclesystem.bean.ShareItem
+			android:id="@+id/item_5"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp"
+		android:background="#bfbfbf"/>
+
+	<Button
+		android:id="@+id/btn_cancel"
+		android:layout_width="match_parent"
+		android:layout_height="54dp"
+		android:background="#FFF"
+		android:gravity="center"
+		android:text="取消"
+		android:textColor="#333"
+		android:textSize="15sp"/>
+</LinearLayout>
