@@ -6,7 +6,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/launcher_splash_bg" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/luancher_welcome" />
 
     <RelativeLayout
         android:id="@+id/ad_jump_layout1"

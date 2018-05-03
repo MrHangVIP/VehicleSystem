@@ -47,6 +47,7 @@ public class MainTabActivity extends BaseActivity {
     private ImageView aml_iv_publish;
     private HomeFragment homeFragment;
     private UserCenterFragment userCenterFragment;
+    private  long curtime;
 
     @Override
     protected void setView() {
@@ -237,6 +238,18 @@ public class MainTabActivity extends BaseActivity {
                     || TextUtils.isEmpty(userItem.getType())) {
                 jumpToNext(FinishUserInfoActivity.class);
             }
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        long time= System.currentTimeMillis();
+        if(time-curtime<=3000){//3秒内重复点击退出
+            android.os.Process.killProcess(android.os.Process.myPid());
+            System.exit(0);
+        }else{
+            curtime=time;
+            toast("再点击一次退出");
         }
     }
 }
